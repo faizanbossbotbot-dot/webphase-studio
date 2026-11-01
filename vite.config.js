@@ -1,3 +1,4 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-export default defineConfig({ plugins: [react()], root: '.', server: { proxy: { '/api': 'http://localhost:3001', '/uploads': 'http://localhost:3001' } }, build: { outDir: 'dist', emptyOutDir: true } });
+// In local development run `netlify dev`, which serves the Netlify Functions for /api and /uploads alongside Vite.
+export default defineConfig({ plugins: [react()], root: '.', build: { outDir: 'dist', emptyOutDir: true } });

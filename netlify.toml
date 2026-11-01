@@ -2,7 +2,20 @@
   command = "npm ci && npm run build"
   publish = "dist"
 
+[functions]
+  node_bundler = "esbuild"
+
+# Static assets and the React app. /api/* and /uploads/* are served by Netlify Functions
+# (netlify/functions/api.ts and uploads.ts), which take precedence over this SPA fallback.
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "DENY"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"

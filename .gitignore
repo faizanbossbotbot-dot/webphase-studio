@@ -8,3 +8,6 @@ data/jwt-secret.txt
 data/site-data.json.tmp
 uploads/*
 !uploads/.gitkeep
+
+# Local Netlify folder
+.netlify

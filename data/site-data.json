@@ -1,0 +1,267 @@
+{
+  "settings": {
+    "whatsapp": "+923413614268",
+    "socials": {
+      "linkedin": "",
+      "instagram": "",
+      "facebook": "",
+      "tiktok": ""
+    },
+    "seoTitle": "WebPhase | AI-Native Web Design & Development, Islamabad",
+    "seoDescription": "We build digital experiences that deliver results. Strategy, design and technology for brands ready to move forward.",
+    "contactEmail": "info@webphase.net",
+    "location": "Islamabad, Pakistan",
+    "heroVideo": "",
+    "heroPoster": "",
+    "studioMedia": [
+      {
+        "id": "sm1",
+        "title": "Inside the studio",
+        "url": "https://webphase.net/assets/reels/reel-1-poster.webp",
+        "video": "https://webphase.net/assets/reels/reel-1.mp4"
+      },
+      {
+        "id": "sm2",
+        "title": "WebPhase brand film",
+        "url": "https://webphase.net/assets/reels/reel-2-poster.webp",
+        "video": "https://webphase.net/assets/reels/reel-2.mp4"
+      },
+      {
+        "id": "sm3",
+        "title": "Social post",
+        "url": "https://webphase.net/assets/reels/reel-3-poster.webp",
+        "video": "https://webphase.net/assets/reels/reel-3.mp4"
+      },
+      {
+        "id": "sm4",
+        "title": "Client work reel",
+        "url": "https://webphase.net/assets/reels/reel-4-poster.webp",
+        "video": "https://webphase.net/assets/reels/reel-4.mp4"
+      },
+      {
+        "id": "sm5",
+        "title": "Behind the scenes",
+        "url": "https://webphase.net/assets/reels/reel-5-poster.webp",
+        "video": "https://webphase.net/assets/reels/reel-5.mp4"
+      },
+      {
+        "id": "sm6",
+        "title": "Studio moment",
+        "url": "https://webphase.net/assets/reels/reel-6-poster.webp",
+        "video": "https://webphase.net/assets/reels/reel-6.mp4"
+      }
+    ],
+    "heroFloatImages": [
+      {
+        "id": "hero1",
+        "title": "",
+        "url": "/media/hero-01.webp"
+      },
+      {
+        "id": "hero2",
+        "title": "we push boundaries",
+        "url": "/media/hero-02.webp"
+      },
+      {
+        "id": "hero3",
+        "title": "only a message away",
+        "url": "/media/hero-03.webp"
+      },
+      {
+        "id": "hero4",
+        "title": "",
+        "url": "/media/hero-04.webp"
+      },
+      {
+        "id": "hero5",
+        "title": "we work worldwide",
+        "url": "/media/hero-05.webp"
+      }
+    ]
+  },
+  "content": {
+    "heroTitle": "We build stuff that delivers results",
+    "heroEyebrow": "AI-NATIVE DIGITAL STUDIO · ISLAMABAD",
+    "heroSub": "Strategy, design and technology for brands ready to move forward.",
+    "futureTitle": "an agency built for the future. from AI to Agents",
+    "flickTitle": "Inside the studio",
+    "teamTitle": "selected work from an award-winning studio in islamabad.",
+    "testimonialTitle": "Wholesale Central",
+    "awardsTitle": "good enough for google, awwwards and tommy hilfiger.",
+    "servicesTitle": "how we can help:"
+  },
+  "projects": [
+    {
+      "id": "p1",
+      "name": "ASH Clinics",
+      "category": "Healthcare · Digital Experience",
+      "image": "https://webphase.net/assets/wp-project-ash-clinics.webp",
+      "description": "A refined digital experience for a modern aesthetics and wellness clinic."
+    },
+    {
+      "id": "p2",
+      "name": "Aurattech",
+      "category": "Non-profit · Education",
+      "image": "https://webphase.net/assets/wp-project-aurattech.webp",
+      "description": "A bold platform supporting women through technology education."
+    },
+    {
+      "id": "p3",
+      "name": "FlowlyOS AI",
+      "category": "AI · SaaS Platform",
+      "image": "https://webphase.net/assets/wp-project-flowlyos.webp",
+      "description": "A streamlined product experience for building and automating quiz funnels."
+    },
+    {
+      "id": "p4",
+      "name": "Light Factory",
+      "category": "Creative · Brand Website",
+      "image": "https://webphase.net/assets/wp-project-light-factory-mockup.webp",
+      "description": "A cinematic digital home for a creative production company."
+    },
+    {
+      "id": "p5",
+      "name": "Tommy Hilfiger",
+      "category": "Fashion · Corporate",
+      "image": "https://webphase.net/assets/wp-project-tommy-hilfiger-mockup.webp",
+      "description": "A polished brand experience for an internationally recognised fashion label."
+    },
+    {
+      "id": "p6",
+      "name": "EVER",
+      "category": "Real Estate · Digital",
+      "image": "https://webphase.net/assets/wp-project-ever.webp",
+      "description": "A contemporary property experience balancing architecture and nature."
+    },
+    {
+      "id": "p7",
+      "name": "Hifazat UNFPA",
+      "category": "Social Impact · Mobile App",
+      "image": "https://webphase.net/assets/wp-project-hifazat-unfpa.webp",
+      "description": "A mobile experience supporting access to trusted information and resources."
+    },
+    {
+      "id": "p8",
+      "name": "RYSE Supps",
+      "category": "E-commerce · Wellness",
+      "image": "https://webphase.net/assets/wp-project-ryse-supps.webp",
+      "description": "A bold e-commerce experience for a performance and wellness brand."
+    }
+  ],
+  "services": [
+    "Web design & development",
+    "AI integrations & agents",
+    "Brand identity & strategy",
+    "E-commerce experiences"
+  ],
+  "testimonials": [
+    {
+      "name": "Chris Lawrence",
+      "role": "Founder · Wholesale Central",
+      "quote": "A thoughtful team that understands how to turn ambitious ideas into real digital experiences.",
+      "image": "https://webphase.net/assets/testimonials/chris-lawrence-poster.webp"
+    },
+    {
+      "name": "Dorota Pietrzak",
+      "role": "Brand partner",
+      "quote": "The process felt collaborative, considered and focused on the details that matter.",
+      "image": "https://webphase.net/assets/testimonials/dorota-pietrzak-poster.webp"
+    }
+  ],
+  "leads": [],
+  "clientLogos": [
+    {
+      "id": "cl1",
+      "name": "British Council",
+      "image": "",
+      "url": ""
+    },
+    {
+      "id": "cl2",
+      "name": "Marisa Peer",
+      "image": "",
+      "url": ""
+    },
+    {
+      "id": "cl3",
+      "name": "Immersive Gamebox",
+      "image": "",
+      "url": ""
+    },
+    {
+      "id": "cl4",
+      "name": "UNFPA",
+      "image": "",
+      "url": ""
+    },
+    {
+      "id": "cl5",
+      "name": "Tommy Hilfiger",
+      "image": "",
+      "url": ""
+    },
+    {
+      "id": "cl6",
+      "name": "SadaPay",
+      "image": "",
+      "url": ""
+    },
+    {
+      "id": "cl7",
+      "name": "SOL Foundation",
+      "image": "",
+      "url": ""
+    },
+    {
+      "id": "cl8",
+      "name": "ED & I",
+      "image": "",
+      "url": ""
+    }
+  ],
+  "awards": [
+    {
+      "id": "aw1",
+      "name": "Google Mobile Excellence Award",
+      "issuer": "Google",
+      "year": "",
+      "url": ""
+    },
+    {
+      "id": "aw2",
+      "name": "Awwwards Honors Award",
+      "issuer": "Awwwards",
+      "year": "",
+      "url": ""
+    },
+    {
+      "id": "aw3",
+      "name": "BestCSS Site of the Day",
+      "issuer": "BestCSS",
+      "year": "",
+      "url": ""
+    }
+  ],
+  "navigation": [
+    {
+      "id": "nav1",
+      "label": "Work",
+      "href": "#work"
+    },
+    {
+      "id": "nav2",
+      "label": "Studio",
+      "href": "#studio"
+    },
+    {
+      "id": "nav3",
+      "label": "Services",
+      "href": "#services"
+    },
+    {
+      "id": "nav4",
+      "label": "Contact",
+      "href": "#contact"
+    }
+  ]
+}

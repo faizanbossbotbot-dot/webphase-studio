@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+data/admin.json
+data/jwt-secret.txt
+data/site-data.json.tmp
+uploads/*
+!uploads/.gitkeep

@@ -8,6 +8,7 @@ import {
 import './style.css';
 import staticSiteData from '../../data/site-data.json';
 
+// The API runs as Netlify Functions on the same origin (/api/*). VITE_API_BASE is only needed for an external backend.
 const API_ORIGIN = (import.meta.env.VITE_API_BASE || '').replace(/\/$/, '');
 const API = API_ORIGIN + '/api';
 const WA_DEFAULT = '+923413614268';
@@ -43,9 +44,11 @@ async function api(url, opts = {}) {
       },
     });
   } catch (error) {
-    if (error.name === 'AbortError') throw new Error('The API request timed out. Check that the backend is running and reachable.');
-    throw new Error('Could not reach the WebPhase API. Check your connection and backend status.');
+    if (error.name === 'AbortError') throw new Error('The API request timed out. Please try again.');
+    throw new Error('Could not reach the WebPhase API. Check your connection and try again.');
   } finally { clearTimeout(timeout); }
+  // A non-JSON reply means the request was not handled by the API (e.g. the SPA fallback page).
+  if (!(r.headers.get('content-type') || '').includes('application/json')) throw new Error(`The API returned an unexpected response (${r.status}).`);
   const d = await r.json().catch(() => ({}));
   if (!r.ok) throw new Error(d.error || `Request failed (${r.status})`);
   if (d && typeof d.url === 'string' && d.url.startsWith('/uploads/') && API_ORIGIN) d.url = API_ORIGIN + d.url;
@@ -530,7 +533,7 @@ function Admin() {
       } catch (err) {
         if (active) {
           setStatus({ configured: false, unavailable: true });
-          setNotice(`Admin setup needs the live backend. This Netlify site has no API connection yet: ${err.message}. Deploy the included Render service, then set VITE_API_BASE in Netlify and redeploy.`, 'error');
+          setNotice(`The admin API is not responding: ${err.message}. Please refresh in a moment; if it persists, check the latest Netlify deploy and function logs.`, 'error');
           setNoticeType('error');
         }
       }
@@ -602,8 +605,8 @@ function Admin() {
   }
 
   async function uploadFile(file) {
-    if (file.size > 15 * 1024 * 1024) {
-      showNotice('File too large. Max 15 MB.', 'error');
+    if (file.size > 5 * 1024 * 1024) {
+      showNotice('File too large. Max 5 MB per upload. For larger videos, paste a public URL instead.', 'error');
       return null;
     }
     const f = new FormData();
@@ -863,7 +866,7 @@ function Admin() {
                   <div className="admin-field full">
                     <span className="upload-btn-label">Upload image or video</span>
                     <label className="upload-label">
-                      <Upload size={14} /> Choose file (max 15 MB)
+                      <Upload size={14} /> Choose file (max 5 MB)
                       <input
                         type="file"
                         accept="image/*,video/mp4,video/webm"
@@ -975,7 +978,7 @@ function Admin() {
         {/* HERO AND STUDIO MEDIA */}
         {tab === 'media' && <div className="admin-panel">
           <h2>Hero and studio media</h2>
-          <p className="admin-help">Upload videos or posters, or paste an existing public URL. Files are saved by the backend in its uploads folder.</p>
+          <p className="admin-help">Upload videos or posters, or paste an existing public URL. Uploaded files are stored securely on Netlify (max 5 MB each; paste a public URL for larger videos).</p>
           <div className="admin-fields">
             <label className="admin-field">Hero background color<input type="color" value={data.settings.heroBackground || '#f0ebe6'} onChange={e=>update('settings',{...data.settings,heroBackground:e.target.value})}/></label>
             <label className="admin-field full">Hero video URL<input value={data.settings.heroVideo || ''} onChange={e => update('settings', {...data.settings, heroVideo:e.target.value})} placeholder="/uploads/hero.mp4 or https://…" /></label>
